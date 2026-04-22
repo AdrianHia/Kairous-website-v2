@@ -85,34 +85,33 @@ export const PORTFOLIO = {
 // ─── Team Members ─────────────────────────────────────────────────────────────
 export const TEAM = {
   partners: [
-    { name: "Joseph Lee",       role: "Managing Partner" },
-    { name: "See Toh Kean Yaw", role: "Founding Partner" },
-    { name: "Adrian Hia",       role: "Partner" },
-    { name: "Wang Ti",          role: "Partner" },
+    { name: "Joseph Lee",       role: "Managing Partner",  photo: "Joseph_Lee.png" },
+    { name: "See Toh Kean Yaw", role: "Founding Partner",  photo: "See_Toh.png" },
+    { name: "Adrian Hia",       role: "Partner",           photo: "Adrian_Hia.png" },
+    { name: "Wang Ti",          role: "Partner",           photo: "Wang_Ti.png" },
   ],
   vcTeam: [
-    { name: "Lee Teng Hau", role: "Investment Director" },
-    { name: "Wong Xi Rong", role: "Investment Manager" },
+    { name: "Lee Teng Hau", role: "Investment Director", photo: "Teng_Hau.png" },
+    { name: "Wong Xi Rong", role: "Investment Manager",  photo: "Xi_Rong.png" },
   ],
   peTeam: [
-    { name: "Randy Tan",     role: "Investment Director" },
-    { name: "Tan Wiun Kiat", role: "Investment Director" },
-    { name: "Vinz Yap",      role: "Investment Manager" },
+    { name: "Randy Tan",     role: "Investment Director", photo: "Randy_Tan.png" },
+    { name: "Vinz Yap",      role: "Investment Manager",  photo: "Vinz.png" },
+    { name: "Hoang Phan",    role: "Senior Associate",    photo: "Hoang.png" },
   ],
   portfolioVC: [
-    { name: "Siow Khin Shen",  role: "Portfolio Monitoring & Value Creation Manager" },
-    { name: "Siti Nur Afiqah", role: "Localisation & Value Creation Manager" },
+    { name: "Siow Khin Shen",  role: "Portfolio Monitoring & Value Creation Manager", photo: "Khin_Shen.png" },
   ],
   fundraising: [
-    { name: "Johnson Lee",  role: "Fundraising & Strategic Partnerships Manager" },
-    { name: "Aqilah Anuar", role: "Fundraising & Strategic Partnerships Associate" },
+    { name: "Johnson Lee",  role: "Fundraising & Strategic Partnerships Manager",   photo: "Johnson_Lee.png" },
+    { name: "Aqilah Anuar", role: "Fundraising & Strategic Partnerships Associate", photo: "Aqilah.png" },
   ],
   operations: [
     { name: "Liang Tsae Yann", role: "Finance & Operations Director" },
-    { name: "Min Ling",        role: "Fund Admin & Compliance Officer" },
-    { name: "Anna Puah",       role: "Senior Accountant" },
-    { name: "How Sook Hoay",   role: "Account Payable & Treasury Specialist" },
-    { name: "Roziana Samin",   role: "Office Operation Executive" },
+    { name: "Min Ling",        role: "Fund Admin & Compliance Officer", photo: "Min_Ling.png" },
+    { name: "Anna Puah",       role: "Senior Accountant",                      photo: "Anna_Puah.png" },
+    { name: "How Sook Hoay",   role: "Account Payable & Treasury Specialist",  photo: "How.png" },
+    { name: "Roziana Samin",   role: "Office Operation Executive",              photo: "Rozi.png" },
   ],
 };
 

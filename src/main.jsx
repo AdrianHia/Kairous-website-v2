@@ -2,6 +2,43 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import ReactDOM from "react-dom/client";
 import LOGO_SRC from "./assets/logo.png";
 import Globe from "./assets/Globe.jsx";
+
+// ── Team photos ──────────────────────────────────────────────
+import tJoseph    from "./assets/team/Joseph_Lee.png";
+import tSeeToh    from "./assets/team/See_Toh.png";
+import tAdrian    from "./assets/team/Adrian_Hia.png";
+import tWangTi    from "./assets/team/Wang_Ti.png";
+import tTengHau   from "./assets/team/Teng_Hau.png";
+import tXiRong    from "./assets/team/Xi_Rong.png";
+import tRandy     from "./assets/team/Randy_Tan.png";
+import tHoang     from "./assets/team/Hoang.png";
+import tVinz      from "./assets/team/Vinz.png";
+import tKhinShen  from "./assets/team/Khin_Shen.png";
+import tJohnson   from "./assets/team/Johnson_Lee.png";
+import tAqilah    from "./assets/team/Aqilah.png";
+import tAnna      from "./assets/team/Anna_Puah.png";
+import tHow       from "./assets/team/How.png";
+import tRozi      from "./assets/team/Rozi.png";
+import tMinLing   from "./assets/team/Min_Ling.png";
+
+const TEAM_PHOTOS = {
+  "Joseph_Lee.png":  tJoseph,
+  "See_Toh.png":     tSeeToh,
+  "Adrian_Hia.png":  tAdrian,
+  "Wang_Ti.png":     tWangTi,
+  "Teng_Hau.png":    tTengHau,
+  "Xi_Rong.png":     tXiRong,
+  "Randy_Tan.png":   tRandy,
+  "Hoang.png":       tHoang,
+  "Vinz.png":        tVinz,
+  "Khin_Shen.png":   tKhinShen,
+  "Johnson_Lee.png": tJohnson,
+  "Aqilah.png":      tAqilah,
+  "Anna_Puah.png":   tAnna,
+  "How.png":         tHow,
+  "Rozi.png":        tRozi,
+  "Min_Ling.png":    tMinLing,
+};
 import {
   COLORS, PAGES, STATS, OFFICES,
   PORTFOLIO, TEAM, MEDIA_ARTICLES,
@@ -284,11 +321,15 @@ const PortfolioCard = ({ company }) => {
 const TeamCard = ({ member }) => {
   const [h, setH] = useState(false);
   const initials = member.name.split(" ").map(n => n[0]).join("");
+  const photoSrc = member.photo ? TEAM_PHOTOS[member.photo] : null;
   return (
     <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
       style={{ background: "#FFF", borderRadius: 6, border: `1px solid ${COLORS.border}`, transition: "all 0.25s ease", boxShadow: h ? "0 12px 36px rgba(0,0,0,0.13)" : "0 2px 8px rgba(0,0,0,0.07)", borderBottom: h ? `3px solid ${COLORS.crimson}` : "3px solid transparent", overflow: "hidden" }}>
-      <div style={{ width: "100%", aspectRatio: "3/4", display: "flex", alignItems: "center", justifyContent: "center", background: h ? COLORS.crimson : COLORS.snow, transition: "background 0.25s" }}>
-        <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 28, fontWeight: 700, color: h ? "#FFF" : COLORS.crimson }}>{initials}</span>
+      <div style={{ width: "100%", aspectRatio: "3/4", overflow: "hidden", background: COLORS.snow, display: "flex", alignItems: "center", justifyContent: "center" }}>
+        {photoSrc
+          ? <img src={photoSrc} alt={member.name} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block", transition: "transform 0.4s ease", transform: h ? "scale(1.04)" : "scale(1)" }} />
+          : <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 28, fontWeight: 700, color: h ? COLORS.crimson : COLORS.mediumGray }}>{initials}</span>
+        }
       </div>
       <div style={{ padding: "16px 18px 20px" }}>
         <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 15, fontWeight: 700, color: COLORS.nearBlack, marginBottom: 4 }}>{member.name}</div>
