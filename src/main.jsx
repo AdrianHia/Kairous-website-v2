@@ -628,30 +628,38 @@ const PortfolioPage = () => {
 };
 
 const TeamPage = () => {
-  const groups = [
-    { label: "Investment Team — Venture Capital",        members: TEAM.vcTeam,      bg: COLORS.warmGray },
-    { label: "Investment Team — Private Equity",         members: TEAM.peTeam,      bg: "transparent" },
-    { label: "Portfolio Monitoring & Value Creation",    members: TEAM.portfolioVC,  bg: "transparent" },
-    { label: "Fundraising & Strategic Partnerships",     members: TEAM.fundraising,  bg: "transparent" },
-    { label: "Middle & Back Office",                     members: TEAM.operations,   bg: COLORS.warmGray },
-  ];
+  const teamSection = (label, members, bg) => (
+    <section style={{ padding: "32px clamp(16px, 5vw, 80px)", background: bg || "transparent", position: "relative" }}>
+      <div style={{ maxWidth: 1140, margin: "0 auto" }}>
+        <SectionLabel>{label}</SectionLabel>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(130px, 180px))", gap: 16, marginTop: 16 }}>
+          {members.map((m, i) => <TeamCard key={i} member={m} />)}
+        </div>
+      </div>
+    </section>
+  );
+
   return (
     <>
       <PageHeader label="Our Team" title="Experienced Investors," subtitle="Regional Operators" />
-      <Section>
-        <SectionLabel>Partners</SectionLabel>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 200px))", gap: 16, marginTop: 20 }}>
-          {TEAM.partners.map((m, i) => <TeamCard key={i} member={m} />)}
-        </div>
-      </Section>
-      {groups.map(({ label, members, bg }, i) => (
-        <Section key={i} bg={bg}>
-          <SectionLabel>{label}</SectionLabel>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(130px, 180px))", gap: 16, marginTop: 20 }}>
-            {members.map((m, j) => <TeamCard key={j} member={m} />)}
+
+      {/* Partners — slightly more prominent */}
+      <section style={{ padding: "48px clamp(16px, 5vw, 80px)", background: "transparent" }}>
+        <div style={{ maxWidth: 1140, margin: "0 auto" }}>
+          <SectionLabel>Partners</SectionLabel>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(140px, 200px))", gap: 16, marginTop: 16 }}>
+            {TEAM.partners.map((m, i) => <TeamCard key={i} member={m} />)}
           </div>
-        </Section>
-      ))}
+        </div>
+      </section>
+
+      {teamSection("Investment Team — Venture Capital", TEAM.vcTeam, COLORS.warmGray)}
+      {teamSection("Investment Team — Private Equity",  TEAM.peTeam)}
+      {teamSection("Portfolio Monitoring & Value Creation", TEAM.portfolioVC, COLORS.warmGray)}
+      {teamSection("Fundraising & Strategic Partnerships",  TEAM.fundraising)}
+      {teamSection("Middle & Back Office", TEAM.operations, COLORS.warmGray)}
+
+      {/* Testimonials */}
       <Section bg={COLORS.crimson}>
         <SectionLabel light>What Founders Say</SectionLabel>
         <SectionTitle light>Testimonials</SectionTitle>
