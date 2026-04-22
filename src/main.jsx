@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import ReactDOM from "react-dom/client";
-import MAP_BG_SRC from "src/assets/mapBg.js";
-import LOGO_SRC from "src/assets/logo.png";
+import MAP_BG_SRC from "./assets/mapBg.js";
+import LOGO_SRC from "./assets/logo.png";
 import {
   COLORS, PAGES, STATS, OFFICES,
   PORTFOLIO, TEAM, MEDIA_ARTICLES,
