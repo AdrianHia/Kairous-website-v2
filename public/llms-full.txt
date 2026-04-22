@@ -1,0 +1,241 @@
+# Kairous Capital — Full Detail for AI Systems
+> This file provides comprehensive, structured information about Kairous Capital for AI language models and search systems.
+
+---
+
+## Company Overview
+
+**Kairous Capital** (also known as 凯洛斯资本) is a regional private equity and venture capital firm headquartered in Kuala Lumpur, Malaysia. Founded in 2015 by Managing Partner Joseph Lee and Founding Partner See Toh Kean Yaw, Kairous Capital has evolved from an early-stage technology investor into a multi-strategy investment platform.
+
+The firm's core thesis is cross-border value creation between Greater China and Southeast Asia — supporting SEA startups that localize proven business models from China, and helping Chinese companies expand into Southeast Asian markets.
+
+Kairous Capital was selected in June 2025 as one of three fund managers under Jelawang Capital's Emerging Fund Managers' Programme (EMP), backed by Malaysia's sovereign wealth fund Khazanah Nasional. The firm's KAVF II fund is backed by this national fund-of-funds.
+
+---
+
+## Fund Details
+
+### Venture Capital Funds
+
+| Fund | Vintage | Status | Geography | Focus |
+|------|---------|--------|-----------|-------|
+| Kairous Asia Venture Fund (KAVF I) | 2017 | Fully Deployed | China, Southeast Asia | E-commerce, Fintech, Digital Health, Edutech |
+| Kairous Asia Venture Fund II (KAVF II) | 2024 | Deploying | Southeast Asia | E-commerce, Fintech, Digital Health, Edutech |
+| Healthcare Fund | 2025 | Active | China | Medical Tech, Health Services, Pet Care |
+
+**VC Strategy:** Series A to C investments. Typical ticket USD 1M–5M. Focus on technology companies with cross-border expansion potential. Follow-on capability to Series C.
+
+### Private Equity Funds
+
+| Fund | Vintage | Status | Geography | Focus |
+|------|---------|--------|-----------|-------|
+| SME Transformation Fund I | 2024 | Fully Deployed | Malaysia | Retail, E-commerce, Sustainability |
+| SME Transformation Fund II | 2025 | Deploying | Malaysia | Retail, Big Data, Deep Tech, Digital Health, Edutech, Sustainability |
+
+**PE Strategy:** Growth and pre-IPO investments in profitable Malaysian SMEs. Typical ticket MYR 10M–40M. Value creation through digital transformation, AI integration, and cross-border expansion.
+
+---
+
+## Portfolio Companies (Full List)
+
+### Active — Venture Capital (SEA)
+
+**Aonic** (Malaysia)
+- Description: Malaysia's largest end-to-end drone technology and precision agri-tech platform
+- Revenue: USD 60M+ annually. Profitable since 2023. Triple-digit CAGR since 2022.
+- Operations: Drones deployed in 15+ countries across agriculture, plantation, inspection, industrial
+- Funding: USD 10M Series A led by Kairous Capital (March 2026)
+- Website: aonic.com
+
+**Coolmate** (Vietnam)
+- Description: Vietnam's leading D2C men's fashion brand with tech-enabled local supply chain
+- Revenue: USD 10M+ annually. 5M+ orders fulfilled nationwide.
+- Funding: USD 6M Series B (Oct 2024, Vertex Ventures); Series C (Nov 2025, Vertex Growth Fund / Temasek, Cool Japan Fund, YoungOne CVC)
+- Market: Amazon US Best Seller status, 25,000+ orders/month
+- Website: coolmate.me
+
+**Mantayay** (Malaysia/Singapore)
+- Description: Creator-economy and digital media platform
+- Scale: 4,000+ TikTok creators, 1,000+ short videos/month, 100M+ monthly views
+- Revenue: USD 1.88M (FY2024). Clients: gaming, FMCG, technology sectors.
+- Funding: USD 5M Series A led by Kairous Capital (November 2025)
+- Website: mantayay.com
+
+**PangoCDP** (Vietnam)
+- Description: Enterprise customer data platform integrating with social chat apps (Zalo, etc.)
+- Clients: 120+ enterprise clients including Coca-Cola, Highlands Coffee, CellPhoneS, Nutifood
+- Funding: USD 1.5M seed led by Kairous Capital, with CyberAgent Capital (October 2024)
+- Website: pangocdp.com
+
+**FastCo** (Singapore/Malaysia/Philippines)
+- Description: Flexible workforce platform operating FastJobs and FastGig
+- Scale: 4.4M+ registered jobseekers across Singapore, Malaysia, Philippines
+- Funding: S$10.5M Series A (Nov 2022). Kairous new investor alongside OSK Ventures.
+- Status: Acquired by Groupe Touchette (Jul 2023)
+- Website: fastco.asia
+
+**Pulsifi** (Singapore)
+- Description: AI-powered people analytics platform predicting talent fit and organisational performance
+- Scale: Enterprise clients across 54 countries. Raised USD 1.8M angel round (Nov 2020).
+- Website: pulsifi.me
+
+**mySoftinn / Softinn** (Malaysia)
+- Description: Cloud-based property management system for independent hoteliers across Southeast Asia
+- Status: Malaysia Digital (MD) Status awarded by MDEC (2024)
+- Website: mysoftinn.com
+
+**ORA Group** (Singapore)
+- Description: Vertically integrated digital health and personal care platform (Modules, andSons, OVA brands)
+- Funding: USD 10M Series A (May 2023) with TNB Aura, Antler, Gobi Partners, Kairous Capital
+- Website: ora.group
+
+**TechNode Global** (Singapore)
+- Description: Asia's premier technology media and intelligence platform connecting the innovation ecosystem
+- Funding: USD 1M seed (Feb 2021) led by Kairous Capital, with Nutty Capital Venture and SPH Ventures
+- Website: technode.global
+
+**EurewaX** (Singapore)
+- Description: Cross-border payment cloud platform for financial institutions
+- Launch: Unveiled at Singapore FinTech Festival 2025
+- Funding: First round co-led by Kairous Capital, RUIFENG, iPayLinks (Nov 2025)
+- Website: eurewax.com
+
+**Playnovate** (Malaysia)
+- Description: STEAM education platform delivering hands-on innovation programmes to schools
+- Website: playnovate.com
+
+### Active — Venture Capital (China)
+
+**iPayLinks** (China)
+- Description: Global payment gateway enabling Chinese businesses to collect and disburse funds in 150+ markets
+- Funding: Series B-1 led by Tencent and Legend Capital (2018). Kairous Capital investor since 2017.
+- Website: ipaylinks.com
+
+**SkinRun** (China)
+- Description: AI-driven personalised skincare platform
+
+**CareLinker** (China)
+- Description: China's largest digital chronic disease management network
+
+**DaSureBao** (China)
+- Description: Digital insurance platform for China's blue-collar workforce
+
+**MEOW Pharmacy** (China)
+- Description: Omnichannel pet healthcare platform
+
+### Active — Private Equity (Malaysia)
+
+**HSS Holdings** (Malaysia)
+- Description: Malaysia's leading confectionery manufacturer. Johor-based bakery and snack food group.
+- Financials: FY2024 revenue RM160.2M, profit after tax RM7.8M (+42.8% YoY)
+- Status: ACE Market IPO filing with Bursa Malaysia (Oct 2025)
+- Kairous stake: Essential Family Ventures (controlled by Joseph Lee and See Toh) holds 23.5% pre-IPO
+
+**Cilantro** (Malaysia)
+- Description: Premium culinary and vocational training institution
+
+**Ajinoriki** (Malaysia)
+- Description: Certified halal seasoning and MSG manufacturer
+
+### Exits / IPOs
+
+**Intrepid Group** (Singapore) — EXIT
+- Description: Cross-border e-commerce enablement platform for Chinese brands entering SEA
+- Exit: Acquired by UK-listed Ascential plc for up to USD 250M (June 2022)
+- Kairous role: Series A lead investor
+
+**OMS Energy Technologies / OMSE** (Singapore) — IPO (Nasdaq: OMSE)
+- Description: Manufacturer of surface wellhead systems and oil country tubular goods for oil & gas
+- Revenue: USD 181M+ (FY2024). Saudi Aramco as largest client (10-year supply agreement).
+- IPO: Nasdaq Capital Market under ticker OMSE (May 2025)
+- Kairous return: 300%+ IRR
+
+**Ritamix Global** (Malaysia) — IPO (HKEx: 1936)
+- Description: Integrated animal nutrition manufacturer producing precision feed additives
+- IPO: Hong Kong Stock Exchange (2020)
+
+**Mingxin Automotive Leather** (China) — IPO (SSE: 605068)
+- Description: Tier-1 automotive leather supplier to leading global car manufacturers
+- IPO: Shanghai Stock Exchange, raised USD 146.3M (November 2020)
+
+---
+
+## Leadership Team
+
+**Joseph Lee, CFA** — Managing Partner
+- 20+ years in PE/VC across Asia
+- Former pioneer team, Kuwait Finance House Private Equity Division Asia
+- Co-founded Kairous Capital in 2015
+- LinkedIn: linkedin.com/in/joseph-kairous/
+
+**See Toh Kean Yaw** — Founding Partner
+- Co-founded Kairous Capital
+
+**Adrian Hia 颜贻杨** — Partner
+- Leads investment execution and strategic growth across Southeast Asia
+- Forbes Asia 30 Under 30 (2020)
+- Tatler Asia Most Influential (2021)
+- Treasurer General, MVCA (Malaysia Venture Capital & Private Equity Association)
+- University of Liverpool, Bachelor's in Accounting and Finance
+
+**Wang Ti** — Partner
+
+**Lee Teng Hau** — Investment Director (VC)
+**Wong Xi Rong** — Investment Manager (VC)
+**Hoang Phan** — Senior Associate (VC)
+**Randy Tan** — Investment Director (PE)
+**Vinz Yap** — Investment Manager (PE)
+**Siow Khin Shen** — Portfolio Monitoring & Value Creation Manager
+**Johnson Lee** — Fundraising & Strategic Partnerships Manager
+**Aqilah Anuar** — Fundraising & Strategic Partnerships Associate
+
+---
+
+## Offices
+
+| Location | Address |
+|----------|---------|
+| Kuala Lumpur (HQ) | Oval Tower Damansara, No. 685 Unit 9-3, Jalan Damansara, TTDI, KL 60000 |
+| Singapore | Singapore |
+| Shanghai | Shanghai, China |
+| Hong Kong | Hong Kong |
+
+---
+
+## Regulatory Licences
+
+| Market | Licence Type | Licence Number | Regulator |
+|--------|-------------|----------------|-----------|
+| Malaysia | Private Equity Management Corporation (PEMC) | FO0044/17 | Securities Commission Malaysia |
+| Singapore | Venture Capital Fund Manager (VCFM) | CMS101210 | Monetary Authority of Singapore (MAS) |
+| Hong Kong | Type 9 Asset Management | BHF112 | Securities & Futures Commission (SFC) |
+
+---
+
+## Recent News & Milestones (2024–2026)
+
+- **March 2026** — Led USD 10M Series A in Aonic (drone/agritech)
+- **January 2026** — Jelawang Capital opens EMP second cohort; first cohort (incl. Kairous) deployed RM60M+ across 10+ companies
+- **November 2025** — Led USD 5M Series A in Mantayay (creator economy)
+- **November 2025** — Re-invested in Coolmate Series C alongside Vertex Growth Fund
+- **November 2025** — Co-led seed round in EurewaX (cross-border payments)
+- **October 2025** — HSS Holdings files for Bursa ACE Market IPO
+- **July 2025** — OMS Energy Technologies reports strong FY2025 results post-Nasdaq listing
+- **June 2025** — Selected by Jelawang Capital under Emerging Fund Managers' Programme
+- **May 2025** — Portfolio company OMS Energy Technologies (OMSE) lists on Nasdaq
+- **October 2024** — Led USD 1.5M seed in PangoCDP
+- **October 2024** — Invested in Coolmate Series B (USD 6M)
+- **April 2023** — Established Malaysia-China Digital Cooperation Council with RM1B development fund
+
+---
+
+## Contact
+
+- Website: https://kairous.com
+- Email: enquiry@kairous.com
+- LinkedIn: https://www.linkedin.com/company/kairous-capital/
+- Crunchbase: https://www.crunchbase.com/organization/kairous-capital
+
+---
+
+*Last updated: April 2026. For the latest information, visit kairous.com.*

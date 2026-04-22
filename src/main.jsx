@@ -901,6 +901,22 @@ function App() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // ── Dynamic SEO: update <title> and meta description on page change ──
+  useEffect(() => {
+    const pageKey = Object.keys(PAGES).find(k => PAGES[k] === displayPage)?.toLowerCase() || "home";
+    const seoKey = pageKey === "vc" ? "vc" : pageKey === "pe" ? "pe" : pageKey;
+    const meta = SEO[seoKey] || SEO.home;
+    document.title = meta.title;
+    const desc = document.querySelector("meta[name='description']");
+    if (desc) desc.setAttribute("content", meta.description);
+    const ogTitle = document.querySelector("meta[property='og:title']");
+    if (ogTitle) ogTitle.setAttribute("content", meta.title);
+    const ogDesc = document.querySelector("meta[property='og:description']");
+    if (ogDesc) ogDesc.setAttribute("content", meta.description);
+    const ogUrl = document.querySelector("meta[property='og:url']");
+    if (ogUrl) ogUrl.setAttribute("content", `https://kairous.com/${pageKey === "home" ? "" : "#" + pageKey}`);
+  }, [displayPage]);
+
   const navigate = useCallback((p) => {
     if (p === displayPage) return;
     setTransState("out");

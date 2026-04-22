@@ -1,0 +1,65 @@
+# Kairous Capital
+> Regional private equity and venture capital firm headquartered in Kuala Lumpur, Malaysia. Founded in 2015. Investing and scaling high-growth businesses across Southeast Asia and Greater China.
+
+Kairous Capital is a cross-border PE/VC hybrid firm. It manages 5 funds — 3 venture capital funds and 2 private equity funds — with 20+ portfolio companies and 5+ successful exits. The firm is backed by Jelawang Capital (Malaysia's National Fund-of-Funds, a Khazanah subsidiary) through its Emerging Fund Managers' Programme.
+
+## Key Facts
+- Founded: 2015
+- Headquarters: Kuala Lumpur, Malaysia
+- Offices: Singapore, Shanghai, Hong Kong
+- Funds managed: 5 (3 VC, 2 PE)
+- Portfolio companies: 20+
+- Successful exits: 5+
+- Notable exits: Intrepid (acquired by Ascential for up to USD 250M), OMS Energy Technologies (Nasdaq IPO: OMSE), Ritamix Global (HKEx IPO: 1936), Mingxin Automotive Leather (SSE IPO: 605068)
+
+## Investment Strategies
+
+### Venture Capital
+- Funds: Kairous Asia Venture Fund (KAVF I), Kairous Asia Venture Fund II (KAVF II), Healthcare Fund
+- Stage: Series A to C
+- Geography: Southeast Asia, Greater China
+- Ticket size: USD 1M – 5M
+- Focus sectors: Fintech, Digital Health, E-commerce, Edutech, Enterprise SaaS, Creator Economy, Drone/Agritech
+
+### Private Equity
+- Funds: SME Transformation Fund I, SME Transformation Fund II
+- Stage: Growth / Pre-IPO
+- Geography: Malaysia
+- Ticket size: MYR 10M – 40M
+- Focus: Profitable SMEs undergoing digital transformation and cross-border expansion
+
+## Notable Portfolio Companies
+- **Aonic** — Malaysia's largest drone technology and precision agri-tech platform. USD 60M+ revenue, profitable since 2023. Raised USD 10M Series A led by Kairous (Mar 2026).
+- **Coolmate** — Vietnam's leading D2C men's fashion brand. Raised USD 6M Series B (Oct 2024) and Series C (Nov 2025) with Vertex Growth Fund, Cool Japan Fund, YoungOne CVC.
+- **Mantayay** — Malaysian creator-economy platform managing 4,000+ TikTok creators, 100M+ monthly views. Raised USD 5M Series A led by Kairous (Nov 2025).
+- **PangoCDP** — Vietnamese enterprise customer data platform serving 120+ clients including Coca-Cola and Highlands Coffee. Raised USD 1.5M seed led by Kairous (Oct 2024).
+- **EurewaX** — Cross-border payment cloud platform. First-round financing co-led by Kairous, RUIFENG, and iPayLinks (Nov 2025).
+- **Pulsifi** — AI-powered people analytics platform. Serves enterprise clients across 54 countries.
+- **mySoftinn** — Cloud-based property management system for independent hoteliers across SEA.
+- **ORA Group** — Vertically integrated telehealth and personal care platform across Singapore, Malaysia, Philippines.
+- **TechNode Global** — Asia's premier technology media and intelligence platform.
+- **iPayLinks** — Cross-border payment gateway enabling Chinese businesses to transact in 150+ countries.
+- **OMS Energy Technologies (OMSE)** — Nasdaq-listed manufacturer of surface wellhead systems. Saudi Aramco's supplier. 300%+ IRR for Kairous.
+- **Ritamix Global (HKEx: 1936)** — Malaysia's leading animal feed additives and supplements manufacturer.
+- **Mingxin Automotive Leather (SSE: 605068)** — Tier-1 automotive leather supplier to global car manufacturers.
+- **HSS Holdings** — Malaysian confectionery group. ACE Market IPO filing (Oct 2025).
+- **FastCo** — Workforce platform (FastJobs, FastGig) serving 4.4M+ jobseekers across SEA.
+
+## Leadership
+- **Joseph Lee** — Managing Partner. 20+ years in PE/VC across Asia. Former Kuwait Finance House Private Equity Division.
+- **See Toh Kean Yaw** — Founding Partner.
+- **Adrian Hia** — Partner. Forbes Asia 30 Under 30 (2020). Treasurer General, MVCA. Leads investment execution and cross-border strategy.
+- **Wang Ti** — Partner.
+
+## Regulatory Licences
+- Malaysia: Securities Commission Malaysia (PEMC licence FO0044/17)
+- Singapore: MAS (VCFM licence CMS101210)
+- Hong Kong: SFC (Type 9 Asset Management licence BHF112)
+
+## Contact
+- Website: https://kairous.com
+- Email: enquiry@kairous.com
+- LinkedIn: https://www.linkedin.com/company/kairous-capital/
+
+## Optional
+- Full detail: https://kairous.com/llms-full.txt
