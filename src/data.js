@@ -107,7 +107,7 @@ export const TEAM = {
     { name: "Aqilah Anuar", role: "Fundraising & Strategic Partnerships Associate", photo: "Aqilah.png" },
   ],
   operations: [
-    { name: "Liang Tsae Yann", role: "Finance & Operations Director" },
+    { name: "Liang Tsae Yann", role: "Finance & Operations Director", photo: "Yann.png" },
     { name: "Min Ling",        role: "Fund Admin & Compliance Officer", photo: "Min_Ling.png" },
     { name: "Anna Puah",       role: "Senior Accountant",                      photo: "Anna_Puah.png" },
     { name: "How Sook Hoay",   role: "Account Payable & Treasury Specialist",  photo: "How.png" },
