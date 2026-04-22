@@ -20,7 +20,6 @@ import tAnna      from "./assets/team/Anna_Puah.png";
 import tHow       from "./assets/team/How.png";
 import tRozi      from "./assets/team/Rozi.png";
 import tMinLing   from "./assets/team/Min_Ling.png";
-import tYann      from "./assets/team/Yann.png";
 
 const TEAM_PHOTOS = {
   "Joseph_Lee.png":  tJoseph,
@@ -39,11 +38,10 @@ const TEAM_PHOTOS = {
   "How.png":         tHow,
   "Rozi.png":        tRozi,
   "Min_Ling.png":    tMinLing,
-  "Yann.png":        tYann,
 };
 import {
   COLORS, PAGES, STATS, OFFICES,
-  PORTFOLIO, TEAM, MEDIA_ARTICLES,
+  PORTFOLIO, TEAM, NEWS_DATA,
   VC_FUNDS, PE_FUNDS, SECTORS, ACCREDITATIONS, TESTIMONIALS, SEO,
 } from "./data.js";
 
@@ -363,26 +361,127 @@ const FundCard = ({ fund }) => (
   </div>
 );
 
-const ArticleCard = ({ article }) => (
-  <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-    <div style={{ border: `1px solid ${COLORS.border}`, borderRadius: 6, overflow: "hidden", background: "#FFF", boxShadow: "0 2px 8px rgba(0,0,0,0.07)", transition: "all 0.25s ease", height: "100%" }}
-      onMouseEnter={hoverOn} onMouseLeave={hoverOff}>
-      <div style={{ height: 6, background: COLORS.crimson }} />
-      <div style={{ padding: 22 }}>
-        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 12 }}>
-          <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 11, color: COLORS.crimson, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase" }}>{article.tag}</div>
-          <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 11, color: COLORS.mediumGray }}>{article.source}</div>
-        </div>
-        <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 15, fontWeight: 700, color: COLORS.nearBlack, lineHeight: 1.45, marginBottom: 14 }}>{article.title}</div>
-        <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 12, color: COLORS.mediumGray }}>{article.date}</div>
-      </div>
-    </div>
-  </a>
-);
+const SOURCE_COLORS = {
+  "The Edge Malaysia":   "#003366",
+  "DealStreetAsia":      "#c0392b",
+  "TechNode Global":     "#1a1a2e",
+  "TechNode":            "#1a1a2e",
+  "Digital News Asia":   "#2e86ab",
+  "PRNewswire":          "#555555",
+  "AsiaTechDaily":       "#2d6a4f",
+  "Tech in Asia":        "#e67e22",
+  "The Star":            "#cc0000",
+  "Fintech Singapore":   "#0077b6",
+  "MobiHealthNews":      "#264653",
+  "Nasdaq / Renaissance Capital": "#555555",
+  "Renaissance Capital": "#555555",
+  "Ventureburn":         "#6d4c41",
+};
 
-// ============================================================
-// PAGES
-// ============================================================
+const ArticleCard = ({ article }) => {
+  const [h, setH] = useState(false);
+  const srcColor = SOURCE_COLORS[article.source] || COLORS.nearBlack;
+  return (
+    <a href={article.url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", display: "flex" }}>
+      <div onMouseEnter={() => setH(true)} onMouseLeave={() => setH(false)}
+        style={{ border: `1px solid ${COLORS.border}`, borderRadius: 6, overflow: "hidden", background: "#FFF",
+          boxShadow: h ? "0 12px 32px rgba(0,0,0,0.13)" : "0 2px 8px rgba(0,0,0,0.07)",
+          transform: h ? "translateY(-4px)" : "none", transition: "all 0.25s ease",
+          display: "flex", flexDirection: "column", width: "100%" }}>
+        <div style={{ height: 4, background: COLORS.crimson }} />
+        <div style={{ padding: "18px 20px", display: "flex", flexDirection: "column", flex: 1, gap: 10 }}>
+          {/* Top row: source badge + date + badge */}
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+            <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 10, fontWeight: 700, letterSpacing: "0.06em",
+              padding: "3px 8px", borderRadius: 3, background: srcColor, color: "#FFF", whiteSpace: "nowrap" }}>
+              {article.source}
+            </span>
+            <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+              {article.badge && (
+                <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 9, fontWeight: 700, letterSpacing: "0.1em",
+                  padding: "2px 7px", borderRadius: 3, background: COLORS.crimson, color: "#FFF" }}>
+                  {article.badge} ↑
+                </span>
+              )}
+              <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 11, color: COLORS.mediumGray }}>{article.date}</span>
+            </div>
+          </div>
+          {/* Headline */}
+          <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 14, fontWeight: 700, color: COLORS.nearBlack, lineHeight: 1.45, flex: 1 }}>
+            {article.headline}
+          </div>
+          {/* Company + link */}
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+            <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 11, color: COLORS.crimson, fontWeight: 700 }}>
+              {article.company}
+            </span>
+            <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 13, color: h ? COLORS.crimson : COLORS.mediumGray, transition: "color 0.2s" }}>↗</span>
+          </div>
+        </div>
+      </div>
+    </a>
+  );
+};
+
+const MediaPage = () => {
+  const [filter, setFilter] = useState("all");
+  const [visible, setVisible] = useState(12);
+
+  const sorted = [...NEWS_DATA].sort((a, b) => {
+    if (b.year !== a.year) return b.year - a.year;
+    return (b.month || 0) - (a.month || 0);
+  });
+
+  const filtered = filter === "all" ? sorted : sorted.filter(a => a.category === filter);
+  const shown = filtered.slice(0, visible);
+
+  const btnStyle = (active) => ({
+    fontFamily: "'Open Sans', sans-serif", fontSize: 12, fontWeight: 700, letterSpacing: "0.06em",
+    textTransform: "uppercase", padding: "8px 20px", borderRadius: 4, cursor: "pointer", border: "1.5px solid",
+    transition: "all 0.2s ease",
+    background: active ? COLORS.crimson : "#FFF",
+    color: active ? "#FFF" : COLORS.crimson,
+    borderColor: COLORS.crimson,
+  });
+
+  return (
+    <>
+      <PageHeader label="Media" title="News &" subtitle="Insights" />
+      <Section>
+        {/* Filter tabs */}
+        <div style={{ display: "flex", gap: 10, marginBottom: 36, flexWrap: "wrap" }}>
+          {[["all", "All News"], ["firm", "Kairous Capital"], ["portfolio", "Portfolio Companies"]].map(([val, label]) => (
+            <button key={val} onClick={() => { setFilter(val); setVisible(12); }} style={btnStyle(filter === val)}
+              onMouseEnter={e => { if (filter !== val) { e.currentTarget.style.background = "#F5EDE8"; }}}
+              onMouseLeave={e => { if (filter !== val) { e.currentTarget.style.background = "#FFF"; }}}>
+              {label}
+            </button>
+          ))}
+          <span style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 12, color: COLORS.mediumGray, alignSelf: "center", marginLeft: 6 }}>
+            {filtered.length} articles
+          </span>
+        </div>
+        {/* Grid */}
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))", gap: 18 }}>
+          {shown.map(a => <ArticleCard key={a.id} article={a} />)}
+        </div>
+        {/* Load more */}
+        {visible < filtered.length && (
+          <div style={{ textAlign: "center", marginTop: 40 }}>
+            <button onClick={() => setVisible(v => v + 9)}
+              style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 13, fontWeight: 700, padding: "14px 40px",
+                background: "#FFF", color: COLORS.crimson, border: `1.5px solid ${COLORS.crimson}`,
+                borderRadius: 4, cursor: "pointer", textTransform: "uppercase" }}
+              onMouseEnter={e => { e.currentTarget.style.background = "#F5EDE8"; }}
+              onMouseLeave={e => { e.currentTarget.style.background = "#FFF"; }}>
+              Load More ({filtered.length - visible} remaining)
+            </button>
+          </div>
+        )}
+      </Section>
+    </>
+  );
+};
 
 const HomePage = ({ navigate }) => {
   const [heroRef, heroVis] = useScrollReveal();
