@@ -460,7 +460,7 @@ const HomePage = ({ navigate }) => {
           </div>
           <div style={{ background: "#FFF", aspectRatio: "4/3", borderRadius: 8, display: "flex", alignItems: "center", justifyContent: "center", border: `1px solid ${COLORS.border}` }}>
             <div style={{ textAlign: "center" }}>
-              <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 56, fontWeight: 800, color: COLORS.crimson, lineHeight: 1 }}>10</div>
+              <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 56, fontWeight: 800, color: COLORS.crimson, lineHeight: 1 }}>{new Date().getFullYear() - 2014}</div>
               <div style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 12, color: COLORS.mediumGray, marginTop: 8, letterSpacing: "0.12em", textTransform: "uppercase", fontWeight: 600 }}>Years of Investing</div>
             </div>
           </div>
