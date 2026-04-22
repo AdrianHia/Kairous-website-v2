@@ -781,30 +781,6 @@ const TeamPage = () => {
   );
 };
 
-const MediaPage = () => {
-  const [visible, setVisible] = useState(9);
-  const shown = MEDIA_ARTICLES.slice(0, Math.min(visible, MEDIA_ARTICLES.length));
-  return (
-    <>
-      <PageHeader label="Media" title="News &" subtitle="Insights" />
-      <Section>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: 20 }}>
-          {shown.map((a, i) => <ArticleCard key={i} article={a} />)}
-        </div>
-        {visible < MEDIA_ARTICLES.length && (
-          <div style={{ textAlign: "center", marginTop: 40 }}>
-            <button onClick={() => setVisible(v => v + 6)}
-              style={{ fontFamily: "'Open Sans', sans-serif", fontSize: 13, fontWeight: 700, padding: "14px 40px", background: "#FFF", color: COLORS.crimson, border: `1.5px solid ${COLORS.crimson}`, borderRadius: 4, cursor: "pointer", textTransform: "uppercase" }}
-              onMouseEnter={e => { e.currentTarget.style.background = "#DDD8CC"; }}
-              onMouseLeave={e => { e.currentTarget.style.background = "#FFF"; }}>
-              Load More
-            </button>
-          </div>
-        )}
-      </Section>
-    </>
-  );
-};
 
 const ContactPage = () => (
   <>
