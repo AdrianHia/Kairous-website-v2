@@ -20,6 +20,7 @@ import tAnna      from "./assets/team/Anna_Puah.png";
 import tHow       from "./assets/team/How.png";
 import tRozi      from "./assets/team/Rozi.png";
 import tMinLing   from "./assets/team/Min_Ling.png";
+import tYann      from "./assets/team/Yann.png";
 
 const TEAM_PHOTOS = {
   "Joseph_Lee.png":  tJoseph,
@@ -38,6 +39,7 @@ const TEAM_PHOTOS = {
   "How.png":         tHow,
   "Rozi.png":        tRozi,
   "Min_Ling.png":    tMinLing,
+  "Yann.png":        tYann,
 };
 import {
   COLORS, PAGES, STATS, OFFICES,
