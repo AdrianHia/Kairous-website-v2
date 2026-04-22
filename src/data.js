@@ -93,11 +93,11 @@ export const TEAM = {
   vcTeam: [
     { name: "Lee Teng Hau", role: "Investment Director", photo: "Teng_Hau.png" },
     { name: "Wong Xi Rong", role: "Investment Manager",  photo: "Xi_Rong.png" },
+    { name: "Hoang Phan",    role: "Senior Associate",    photo: "Hoang.png" },
   ],
   peTeam: [
     { name: "Randy Tan",     role: "Investment Director", photo: "Randy_Tan.png" },
     { name: "Vinz Yap",      role: "Investment Manager",  photo: "Vinz.png" },
-    { name: "Hoang Phan",    role: "Senior Associate",    photo: "Hoang.png" },
   ],
   portfolioVC: [
     { name: "Siow Khin Shen",  role: "Portfolio Monitoring & Value Creation Manager", photo: "Khin_Shen.png" },
